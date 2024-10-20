@@ -9,9 +9,8 @@ function Header(){
             <header>
                 <div className={styles.Logo}>
                     <img className={styles.LogoPic} src={Logo} alt="Logo" />
-                    <p><span>S</span>hop
-                        <div className={styles.line1}></div>
-                        <div className={styles.line2}></div>
+                    <p className={styles.LogoName}>
+                        <span>S</span>hop
                     </p>
                 </div>
                 <nav>

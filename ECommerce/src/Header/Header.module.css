@@ -11,32 +11,32 @@ header .Logo{
 
 header .Logo img{
     cursor: pointer;
-    animation: opacityShow 0.3s ease-in-out forwards
+    animation: opacityShow 1.8s ease-in-out forwards
 }
 
-header .Logo p{
+header .Logo .LogoName{
     font-size: 26px;
     color: #90BB53;
     font-weight: 700;
     cursor: pointer;
     opacity: 0;
     transform: translateX(-30px);
-    animation: fadeInSlide 0.8s ease-in-out forwards
+    animation: fadeInXSlide 1s ease-in-out forwards;
+    position: relative;
 }
 
-.line1{
+header .Logo .LogoName::after{
+    content: '';
+    position: absolute;
     width: 1rem;
     height: 5px;
     background-color: #536d2f;
-    transform: translateY(-4px);
-}
-.line2{
-    width: 1.5rem;
-    height: 5px;
-    background-color: #536d2f;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 20px 20px 0;
 }
 
-header .Logo p span{
+header .Logo .LogoName span{
     color: #536d2f;
 }
 
@@ -56,6 +56,8 @@ header img{
 header nav{
     align-items: center;
     justify-content: right;
+    transform: translateY(-30px);
+    animation: fadeInYSlide 1s ease-in-out forwards;
 }
 
 header nav ul li{
@@ -81,8 +83,12 @@ header nav ul li:hover{
     cursor: pointer;
 }
 
+header .Logo, header nav {
+    flex-grow: 1;
+}
 
-@keyframes fadeInSlide {
+
+@keyframes fadeInXSlide {
     0% {
       transform: translateX(-30px);
     }
@@ -95,12 +101,59 @@ header nav ul li:hover{
     }
 }
 
+@keyframes fadeInYSlide {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
 @keyframes opacityShow {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    header nav ul li {
+        margin-left: 2rem;
+    }
+
+    .USFlag, .UserIcon {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        margin-left: 1rem;
+        font-size: 14px;
+    }
+
+    .USFlag, .UserIcon {
+        margin-left: 1rem;
+        height: 30px;
+    }
+
+    header .Logo p {
+        font-size: 20px;
+    }
+
+    header img {
+        height: 35px;
     }
 }
 
