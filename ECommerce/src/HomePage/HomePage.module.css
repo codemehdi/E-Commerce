@@ -1,0 +1,99 @@
+
+.SectionContainers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(240, 228, 183);
+    padding: 3rem 2rem 6rem 2rem;
+    box-shadow: 0 4px 10px rgba(240, 228, 183, 0.8);
+}
+
+.SectionContainers .TextSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: OpacityModifier 2s ease-in-out forwards
+}
+
+.SectionContainers .TextSection .inputContainer{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.SectionContainers .TextSection .inputContainer input{
+    width: 65%;
+    height: 45px;
+    border-radius: 15px 0 0 15px;
+    padding: 15px;
+    border: 1px solid #536d2f;
+}
+
+.SectionContainers .TextSection .inputContainer input:focus{
+    outline: none;
+}
+
+.SectionContainers .TextSection .inputContainer button{
+    height: 45px;
+    border-radius: 0 15px 15px 0;
+    background-color: #536d2f;
+    width: 20%;
+    border: 1px solid #536d2f;
+    border-left: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.SectionContainers .TextSection .inputContainer button:hover{
+    color: #536d2f;
+    background-color: aliceblue;
+}
+
+.SectionContainers .TextSection .BigText{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.SectionContainers .TextSection .BigText span{
+    color: #90bb53;
+}
+
+.SectionContainers .TextSection .SmallText{
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.6;
+    margin-top: 1rem;
+}
+
+.SectionContainers .ImageSection{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.SectionContainers .ImageSection img{
+    animation: fadeInXSlide 2s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeInXSlide {
+    0% {
+      transform: translateX(90px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes OpacityModifier {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

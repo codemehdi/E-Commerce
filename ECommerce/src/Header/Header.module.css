@@ -3,6 +3,8 @@ header{
     grid-template-columns: 30% 70%;
     padding: 0.5rem 2rem;
     align-items: center;
+    padding-bottom: 1.5rem;
+
 }
 
 header .Logo{
@@ -104,9 +106,7 @@ header .Logo, header nav {
 @keyframes fadeInYSlide {
     0% {
         transform: translateY(-30px);
-    }
-    50% {
-        opacity: 0.5;
+        opacity: 0;
     }
     100% {
       opacity: 1;
