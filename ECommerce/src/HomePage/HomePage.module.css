@@ -2,9 +2,10 @@
 .SectionContainers{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(240, 228, 183);
+    background-color: #f0e4b7;
     padding: 3rem 2rem 6rem 2rem;
     box-shadow: 0 4px 10px rgba(240, 228, 183, 0.8);
+    animation: ColorChange 2s ease-in-out forwards;
 }
 
 .SectionContainers .TextSection{
@@ -86,6 +87,15 @@
     100% {
       opacity: 1;
       transform: translateX(0);
+    }
+}
+
+@keyframes ColorChange {
+    0% {
+        background-color: #f5f1e7;
+    }
+    100% {
+        background-color: #f0e4b7;
     }
 }
 

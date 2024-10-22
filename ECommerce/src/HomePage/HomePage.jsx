@@ -9,7 +9,7 @@ function HomePage(){
                     <section className={styles.TextSection}>
                         <p className={styles.BigText}>Efficient. Affordable. <br /> 
                         <span>Shop</span> Now </p>
-                        <p className={styles.SmallText}>Shopping Has Just Become Affordable And Easy For Everyone.</p>
+                        <p className={styles.SmallText}>Shopping has just become affordable and easy for everyone.</p>
                         <div className={styles.inputContainer}>
                             <input type="text" placeholder='Enter Your Email'/>
                             <button>Submit</button>
