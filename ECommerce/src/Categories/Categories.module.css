@@ -1,0 +1,210 @@
+.CategoriesContainer{
+    padding: 0rem 2rem;
+}
+
+.CategorySectionOne{
+    columns: 2;
+    column-gap: 0.4rem;
+}
+
+.CategorySectionOne div{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 0.4rem;
+    height: 250px;
+}
+
+.CategoriesContainer .CategorySectionOne div{
+    position: relative;
+    overflow: hidden;
+}
+
+.SectionBtn{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: absolute;
+    bottom: -5rem;
+    right: 2rem;
+    z-index: 10;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.SectionBtn img{
+    position: relative;
+    top:0;
+    left: 0;
+    padding: 5px;
+
+}
+
+.CategoriesContainer .CategorySectionOne div p{
+    z-index: 6;
+    position: absolute;
+    top:-5rem;
+    left:2rem;
+    font-weight: 600;
+    color: white;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+
+.CategoriesContainer .CategorySectionOne div p::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+}
+
+.CategoriesContainer .CategorySectionOne div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 50px 100px 300px rgba(0, 0, 0, 0.9);
+    pointer-events: none; 
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    z-index: 5;
+}
+
+.CategoriesContainer .CategorySectionOne div:hover::before{
+    opacity: 1;
+}
+
+.CategoriesContainer .CategorySectionOne div img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.1);
+    object-fit: cover;
+    filter: grayscale(100%);
+    z-index: 2;
+}
+
+.CategoriesContainer .CategorySectionOne div:hover img {
+    transform: scale(1.0); 
+    filter: grayscale(0%);
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.5);
+}
+
+.CategoriesContainer .CategorySectionOne div:hover p{
+    top: 1rem;
+}
+
+.CategoriesContainer .CategorySectionOne div:hover button{
+    bottom: 1rem;
+}
+
+.CategoriesContainer .CategorySectionTwo div:hover button{
+    bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.CategorySectionTwo{
+    columns: 3;
+    column-gap: 0.4rem;
+}
+
+.CategorySectionTwo div{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 250px;
+}
+
+.CategoriesContainer .CategorySectionTwo div{
+    position: relative;
+    overflow: hidden;
+}
+
+.CategoriesContainer .CategorySectionTwo div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 50px 100px 300px rgba(0, 0, 0, 0.9);
+    pointer-events: none; 
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    z-index: 5;
+}
+
+.CategoriesContainer .CategorySectionTwo div:hover::before{
+    opacity: 1;
+}
+
+.CategoriesContainer .CategorySectionTwo div p{
+    z-index: 6;
+    position: absolute;
+    top:-5rem;
+    left:2rem;
+    font-weight: 600;
+    color: white;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+
+.CategoriesContainer .CategorySectionTwo div p::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+}
+
+.CategoriesContainer .CategorySectionTwo div:hover p{
+    top: 1rem;
+}
+
+.CategoriesContainer .CategorySectionTwo div img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.1);
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.CategoriesContainer .CategorySectionTwo div:hover img {
+    transform: scale(1.0); 
+    filter: grayscale(0%);
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.CategoriesContainer .CategorySectionOne div .ClothesParagraph::before{
+    background-color: #536d2f;
+}
+
+.CategoriesContainer .CategorySectionOne div .ElectronicsParagraph::before{
+    background-color: #bac6d4;
+}
+
+.CategoriesContainer .CategorySectionTwo div .AccessoryParagraph::before{
+    background-color: #f0e4b7;
+}
+
+.CategoriesContainer .CategorySectionTwo div .ToysParagraph::before{
+    background-color: #feff01;
+}
+
+.CategoriesContainer .CategorySectionTwo div .GamingParagraph::before{
+    background-color: #650ba1;
+}

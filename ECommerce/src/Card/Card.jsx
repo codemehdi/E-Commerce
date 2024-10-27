@@ -6,7 +6,7 @@ function Number({ n }) {
     const props = useSpring({
         from: { number: 1 },
         to: { number: n },
-        delay: 500,
+        delay: 1200,
         config: { mass: 1, tension: 20, friction: 10 }
     });
 
