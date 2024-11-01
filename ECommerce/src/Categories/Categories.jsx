@@ -14,6 +14,7 @@ import GamingBtn from '../assets/GamingBtn.png'
 function Categories(){
     return(
         <>
+            <h3 className={styles.CategoriesBigTitle}>Categories</h3>
             <div className={styles.CategoriesContainer}>
                 <section className={styles.CategorySectionOne}>
                     <div className={styles.ElectronicSection}>

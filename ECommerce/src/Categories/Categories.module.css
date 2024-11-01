@@ -1,16 +1,22 @@
+.CategoriesBigTitle{
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .CategoriesContainer{
     padding: 0rem 2rem;
 }
 
 .CategorySectionOne{
     columns: 2;
-    column-gap: 0.4rem;
+    column-gap: 1rem;
 }
 
 .CategorySectionOne div{
-    border: 2px solid black;
     border-radius: 5px;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
     height: 250px;
 }
 
@@ -22,7 +28,6 @@
 .SectionBtn{
     background-color: transparent;
     border-radius: 5px;
-    border: 2px solid black;
     position: absolute;
     bottom: -5rem;
     right: 2rem;
@@ -116,11 +121,10 @@
 
 .CategorySectionTwo{
     columns: 3;
-    column-gap: 0.4rem;
+    column-gap: 1rem;
 }
 
 .CategorySectionTwo div{
-    border: 2px solid black;
     border-radius: 5px;
     height: 250px;
 }

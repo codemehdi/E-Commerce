@@ -1,0 +1,18 @@
+
+.ExploreContainer{
+    padding: 0 2rem;
+    margin-top: 7rem;
+}
+
+.ExploreContainer .ExploreHeading{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+
+.ExploreContainer .ExploreElementsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}

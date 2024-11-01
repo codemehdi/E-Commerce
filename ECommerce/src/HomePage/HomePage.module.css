@@ -1,6 +1,7 @@
 
 .SectionContainers{
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr;
     background-color: #f0e4b7;
     padding: 3rem 2rem 6rem 2rem;

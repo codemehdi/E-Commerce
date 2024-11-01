@@ -1,0 +1,45 @@
+.ExploreItemContainer{
+    width: 20rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.ExploreItemContainer:hover{
+    border: 1px solid black;
+}
+
+.ExploreItemContainer:hover .ExploreItemDetails{
+    padding-left: 0.25rem;
+}
+
+.ExploreItemContainer .ExploreImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f0e4b7;
+    border-radius: 15px;
+}
+
+.ExploreItemContainer .ExploreImageContainer img{
+    width: 90%;
+}
+
+.ExploreItemContainer .ExploreItemDetails{
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.ExploreItemContainer .ExploreItemDetails .ExploreItemName{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ExploreItemContainer .ExploreItemDetails .ExploreItemCategory{
+    opacity: 0.6;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}

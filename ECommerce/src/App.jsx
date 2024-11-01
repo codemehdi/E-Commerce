@@ -2,9 +2,11 @@ import React,{ useEffect, useState } from 'react'
 import './App.css'
 import Header from './Header/Header.jsx'
 import HomePage from './HomePage/HomePage.jsx'
-import Cards from './Cards/Cards.jsx'
-import LineTitle from './LineTitle/LineTitle.jsx'
 import Categories from './Categories/Categories.jsx'
+import Explore from './Explore/Explore.jsx'
+import Seller from './Seller/Seller.jsx'
+import About from './About/About.jsx'
+import Footer from './footer/footer.jsx'
 
 function App() {
   
@@ -15,7 +17,10 @@ function App() {
           <Header />
           <HomePage />
           <Categories />
-          <Cards />
+          <Explore />
+          <Seller />
+          <About />
+          <Footer />
       </div>
     </>
   )
